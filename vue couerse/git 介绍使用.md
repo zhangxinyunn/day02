@@ -142,3 +142,18 @@ git remote add gitee https://gitee.com/urban-migrant-workers/git-demo.git
 git push -u origin main
 ```
 
+### 远程库的操作命令
+
+```bash
+git remote #列出当前的关联的远程库
+git remote add <远程库名><url> #关联远程库
+git remote remove <远程库名> #删除远程库
+git push -u <远程库名><分支> #向远程库推送代码，并和当前分支关联
+git clone <url> #从远程库下载代码
+
+git push #如果本地的版本低于远程库，push默认是推不上去
+git fatch #要想推送成功，必须先确保本地库和远程库的版本一致，fetch它会从远程仓库下载所有代码，但是它不会		  将代码和当前分支自动合并
+		  #使用fetch拉去代码后，必须手动对代码进行合并
+git pull #从服务器上拉取代码并自动合并
+```
+
